@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv">
+    <p>This paragraph is inside a div.</p>
+  </div>
+  <script>
+    //Incorrect way to add event listener in the past. 
+    document.getElementById("myDiv").attachEvent('onclick', function() {
+      alert('Div clicked!');
+    });
+  </script>
+</body>
+</html>
